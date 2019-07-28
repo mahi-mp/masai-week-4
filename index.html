@@ -1,0 +1,159 @@
+<!-- Thanks for visiting it means a lot for me -->
+<!-- you can visit my profile https://mahi-mp.github.io/maheshpawate.github.io/ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Harry Pottor</title>
+	<style type="text/css">
+		image
+		{
+			filter: grayscale(100%);
+		}
+
+		body
+		{
+			background-image: url("wall.jpg") ,url("hog.jpg");
+			background-color: #cccccc;
+			background-size: cover;
+			background-repeat:no-repeat,repeat;
+			height: 100vh;
+		}
+
+		.fix_head
+		{
+  			position: fixed;
+  			top: 850px;
+  			z-index: 2;
+  			width: 100%;
+  			background-color: #f1f1f1;
+		}
+
+		.progress_container
+		{
+  			 width: 100%;
+  			height: 8px;
+ 			background: transparent;
+		}
+
+		.pro_specification
+		{
+			height: 8px;
+ 			background: #2808FA;
+  			width: 0%;
+		}
+
+		.welcome_specification
+		{
+			position: absolute;
+			background-image: url("wel.png");
+			border-radius: 30px;
+			background-color: #cccccc;
+			background-repeat: no-repeat;
+			background-size: 600px 400px;
+			background-position:fixed;
+		}
+
+		.img_hight
+		{
+			height: 400px;
+			width: 600px;
+			margin-left: 100px;
+			margin-top: 50px;
+		}
+
+		.img_text_align
+		{
+			position: relative;
+			top: 325px;
+			left: 30px;
+			color: maroon;
+			font-size: 24px;
+		}
+
+		.link_border
+		{
+			border-style: dotted;
+			border-radius: 40px;
+			border-width: 3px;
+			padding: 5px;
+			background-color: transparent;
+			text-decoration: none;
+			font-family:'Acronim';
+		}
+
+		.img_text_special_alumni
+		{
+			top: 275px;
+			left:40px;
+		}
+
+		.list_align
+		{
+			position: relative;
+			left:90px;
+			height: 70px;
+			top:1100px;
+			bottom: 350px;
+		}
+
+		.list_color
+		{
+			color:white;
+			font-size: 24px;
+		}
+
+		.list_select_back
+		{
+			background-color: transparent;
+			color: white;
+			height: 50px;
+			width: 270px;
+			font-size: 38px;
+			font-family:'BookmanOldStyle';
+		}
+
+		.footer_text_house
+		{
+			position: relative;
+			left:90px;
+			height: 70px;
+			top:775px;
+			font-size: 28px
+
+		}
+
+		.footer_text_alm
+		{
+			top:1400px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="progress_container fix_head ">
+		<div id="add_progress" class="pro_specification" ></div>
+	</div>
+	<div id="second_div" class="welcome_specification img_hight " >
+		<a href="#foot_h" class="img_text_align link_border" >Our House</a>
+		<a href="#foot_a" class="img_text_align link_border " >Our Alumni</a>
+		<a href="#last_add" class="img_text_align link_border " >Take Admission</a>
+	</div>
+
+	<div id="select1" class="list_align">
+		<a id="our_house_list" ></a>
+		<select id="option_select" class="list_select_back">
+			<option value="Gryffindor" onclick="api_call()">Gryffindor</option>
+			<option value="Ravenclaw" onclick="api_call()">Ravenclaw</option>
+			<option value="Slytherin" onclick="api_call()">Slytherin</option>
+			<option value="Hufflepuff" onclick="api_call()">Hufflepuff</option>
+		</select>
+		<label id="foot_h" class="footer_text_house" >.</label>
+		
+		<label id="foot_add" class="footer_text" >.</label>
+	</div>
+	<div>
+		<label id="foot_a" class="footer_text_house footer_text_alm" >.</label>
+	</div>
+<script src="index.js"></script>
+</body>
+</html>

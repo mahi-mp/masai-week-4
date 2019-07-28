@@ -1,0 +1,33 @@
+unction diagonalDifference(arr)
+{
+    var temp = 0;
+    var abc = 0;
+    // Write your code here
+    for (var i = 0; i <= arr.length - 1; i++)
+    {
+        for (var j = 0; j <= arr.length - 1; j++)
+        {
+            if (i == j)
+            {
+                temp += arr[i][j]
+                i++;
+            }
+        }
+    }
+
+
+
+    for (var i = 0; i <= arr.length - 1; i++)
+    {
+        for (var j = arr.length - 1; j > 0; j--)
+        {
+            //if (i == j)
+           // {
+            abc += arr[i][j]
+            i++
+             j--
+           // }
+        }
+    }
+    return temp - abc
+}
